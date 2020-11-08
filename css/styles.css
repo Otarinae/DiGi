@@ -29,7 +29,8 @@ button {
 }
 
 .header__inner {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   height: 100px;
   box-sizing: border-box;
   padding: 0 60px;
@@ -64,10 +65,12 @@ button {
   position: absolute;
   right: 0;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .about__inner {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,23 +79,22 @@ button {
 }
 
 .about__inner > h1 {
-  width: 513px;
   font-size: 96px;
   display: flex;
   justify-content: center;
   text-align: center;
   color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .about__inner > p {
-  width: 513px;
   font-size: 24px;
   line-height: 26px;
   display: flex;
   justify-content: center;
   text-align: center;
   color: #ffffff;
-  width: 885px;
+  max-width: 885px;
   margin: 20px 0 30px;
 }
 
@@ -108,7 +110,7 @@ button {
 }
 
 .btn:hover {
-  color: #f9f6e5;
+  opacity: 0.9;
 }
 
 .circle {
@@ -133,4 +135,38 @@ button {
   border-radius: 50%;
   border: 1px solid #ffffff;
   background-color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    height: 618px;
+    background-position: center;
+  }
+
+  .about__inner > h1 {
+    font-size: 84px;
+  }
+
+  .about__inner > p {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 620px;
+  }
+
+  .circle {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: 465px;
+    background-position: center;
+  }
+  .about__inner > h1 {
+    font-size: 60px;
+  }
+  .circle {
+    margin-top: 100px;
+  }
 }
