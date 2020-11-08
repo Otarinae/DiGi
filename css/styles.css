@@ -107,6 +107,10 @@ button {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: #f9f6e5;
+}
+
 .circle {
   width: 50px;
   height: 12px;
