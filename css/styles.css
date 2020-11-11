@@ -200,13 +200,13 @@ button {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  margin: 0 50px 0 50px;
+  padding: 0 50px;
 }
 
 .service__text {
   display: flex;
   flex-direction: column;
-  min-width: 400px;
+  flex-shrink: 0;
 }
 
 .service__text > h1 {
@@ -257,6 +257,7 @@ button {
   color: #4a4a4a;
   font-weight: 700;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .service__item > img {
@@ -289,7 +290,6 @@ button {
 
 .service__item:hover {
   border: 4px solid #2b4074;
-  box-sizing: border-box;
 }
 
 .service__item:hover > span {
