@@ -200,7 +200,7 @@ button {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .service__text {
@@ -298,6 +298,9 @@ button {
 
 .service__item:hover > .btn__more {
   display: block;
+}
+
+@media (max-width: 1366px) {
 }
 
 @media (max-width: 1024px) {
