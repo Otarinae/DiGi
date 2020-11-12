@@ -123,6 +123,7 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -200,7 +201,7 @@ button {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 
 .service__text {
@@ -258,6 +259,7 @@ button {
   font-weight: 700;
   text-align: center;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 .service__item > img {
@@ -282,6 +284,7 @@ button {
   outline: none;
   cursor: pointer;
   display: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn__more:hover {
@@ -301,6 +304,28 @@ button {
 }
 
 @media (max-width: 1366px) {
+  .service__inner {
+    max-width: 1024px;
+    flex-direction: column;
+    padding: 50px 0 0 0;
+  }
+
+  .service__text > h1 {
+    text-align: center;
+  }
+
+  .service__text > span {
+    max-width: none;
+  }
+
+  .service__text > p {
+    max-width: 610px;
+  }
+
+  .service__menu {
+    margin: 30px 0;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1024px) {
